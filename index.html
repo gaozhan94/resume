@@ -54,15 +54,39 @@
     .t1{
         width: 100%;
         text-align: center;
-        font-size: 16px;
+        font-size: 0.16rem;
         color: #141414;
         font-weight: 600;
+        margin-top: 0.05rem;
     }
     .t2{
         width: 100%;
-        font-size: 0.06rem;
+        font-size: 0.12rem;
         color: #010101;
         font-weight: 400;
+        margin-top: 0.05rem;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .t2 .number{
+        font-size: 0.12rem;
+        color: #010101;
+        font-weight: 600;
+        
+    }
+    .t2 .number span{
+        font-size: 0.08rem;
+        color: #010101;
+        font-weight: 400;
+    }
+    .t2 img{
+        width: 0.64rem;
+        height: 0.64rem;
+        position: absolute;
+        bottom: 0.3rem;
+        right: 0.14rem;
+    
     }
     .table{
         width: 100%;
@@ -74,7 +98,11 @@
     <div class="container">
         <p class="title">不动产登记资料查询结果证明</p>
         <p class="t1">（权利人、利害关系人）</p>
-        <p class="t2">2019年11月14日,根据查询人申请，经查询，结果如下：</p>
+        <p class="t2">
+            <span>2019年11月14日,根据查询人申请，经查询，结果如下：</span>
+            <span class='number'>编号：<span>20191114000765483</span></span>
+            <img src="https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=fa9140accd95d143ce7bec711299e967/2934349b033b5bb571dc8c5133d3d539b600bc12.jpg">
+        </p>
         <table class="table"></table>
     </div>
 </body>
