@@ -37,6 +37,7 @@
         margin: 0 auto;
         padding: 27px 0;
         font-family: "SimSun";
+        font-size: 0.12rem;
     }
     p{
         width: 100%;
@@ -93,6 +94,49 @@
         height: 3rem;
         border: 1px solid #000;
     }
+    .title1{
+        width: 0.42rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 16px;
+        letter-spacing:1px;
+        padding: 0 3px;
+        box-sizing: border-box;
+        border-right: 1px solid #000;
+    }
+    .line1{
+        width: 100%;
+        height: 1.09rem;
+        border-bottom: 1px solid #000;
+        display: flex;
+    }
+    .line1 .row1{
+        flex: 1;
+        height: 100%;
+    }
+    .line1 .row1 p{
+        height: 100%;
+        border-bottom: 1px solid #000;
+        display: flex;
+    }
+    .line1 .row1 p:last-of-type{
+        border-bottom: 1px solid transparent;
+    }
+    .line1 .row1 p span{
+        display: inline-block;
+        text-align: center;
+        border-right: 1px solid #000;
+        line-height: 0.16rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .line1 .row1 p span:last-of-type{
+        border-right: 1px solid transparent;
+    }
+    
 </style>
 <body>
     <div class="container">
@@ -103,7 +147,36 @@
             <span class='number'>编号：<span>20191114000765483</span></span>
             <img src="https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=fa9140accd95d143ce7bec711299e967/2934349b033b5bb571dc8c5133d3d539b600bc12.jpg">
         </p>
-        <table class="table"></table>
+        <div class="table">
+            <div class="line1">
+                <div class="title1"><span>自然状况</span></div>
+                <div class="row1">
+                    <p style="height:0.3rem;">
+                        <span style="width:1.04rem;">坐落</span>
+                        <span style="flex:1;">浦口区蒲州路</span>
+                    </p>
+                    <p style="height:0.39rem;">
+                        <span style="width:0.93rem;">土地用途</span>
+                        <span style="width:0.93rem;">房屋结构</span>
+                        <span style="width:0.93rem;">建（构）筑物规划用途</span>
+                        <span style="width:0.93rem;">所在层/总层数</span>
+                        <span style="width:0.93rem;">建筑面积</span>
+                        <span style="width:0.93rem;">套内建筑面积</span>
+                        <span style="width:0.93rem;">建筑年代</span>
+                    </p>
+                    <p style="height:0.39rem;">
+                            <span style="width:0.93rem;">城镇住宅用地</span>
+                            <span style="width:0.93rem;">钢筋混凝土结构</span>
+                            <span style="width:0.93rem;"></span>
+                            <span style="width:0.93rem;">16/35</span>
+                            <span style="width:0.93rem;">0.00</span>
+                            <span style="width:0.93rem;"></span>
+                            <span style="width:0.93rem;"></span>
+                        </p>
+                </div>
+            </div>
+            
+        </div>
     </div>
 </body>
 </html>
