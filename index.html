@@ -419,7 +419,7 @@
     var date = document.getElementById('date');
     date.innerHTML = d.getFullYear() +'年'+month+'月'+d.getDate()+'日';
     var dateCode = document.getElementById('dateCode');
-    dateCode.innerHTML = d.getFullYear() +'年'+month+'月'+d.getDate()+'日';
+    dateCode.innerHTML = d.getFullYear() +''+month+''+d.getDate();
     var fullDate = document.getElementById('fullDate');
     fullDate.innerHTML = d.getFullYear() +'年'+month+'月'+d.getDate()+'日'+' '+d.getHours()+'时'+d.getMinutes()+'分';
 </script>
