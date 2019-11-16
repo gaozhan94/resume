@@ -142,6 +142,8 @@
     .disc{
         font-size: 0.09rem;
         line-height: 0.16rem;
+        padding: 0 0.04rem;
+        box-sizing: border-box;
     }
     .bold{
         font-size: 0.12rem;
@@ -154,8 +156,8 @@
         <p class="title">不动产登记资料查询结果证明</p>
         <p class="t1">（权利人、利害关系人）</p>
         <p class="t2">
-            <span>2019年11月14日,根据查询人申请，经查询，结果如下：</span>
-            <span class='number'>编号：<span>20191114000765483</span></span>
+            <span><span id="date">****年**月**日</span>,根据查询人申请，经查询，结果如下：</span>
+            <span class='number'>编号：<span><span id="dateCode"></span>000765483</span></span>
             <img src="https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=fa9140accd95d143ce7bec711299e967/2934349b033b5bb571dc8c5133d3d539b600bc12.jpg">
         </p>
         <div class="table">
@@ -164,7 +166,7 @@
                 <div class="row1">
                     <p style="height:0.3rem;">
                         <span style="width:1.04rem;">坐落</span>
-                        <span style="flex:1;">浦口区蒲州路</span>
+                        <span style="flex:1;">浦口区蒲州路66号北外滩水城第十九街区14幢1单元1601室</span>
                     </p>
                     <p style="height:0.39rem;">
                         <span style="width:0.93rem;">土地用途</span>
@@ -190,48 +192,48 @@
                 <div class="title1"><span>权属状况</span></div>
                 <div class="row1">
                     <p style="height:0.3rem;">
-                        <span style="width:1.04rem;">坐落</span>
-                        <span style="width:2.24rem;">浦口区蒲州路</span>
-                        <span style="width:1.04rem;">坐落</span>
-                        <span style="width:2.24rem;">浦口区蒲州路</span>
+                        <span style="width:1.04rem;">宗地代码</span>
+                        <span style="width:2.24rem;">320111003017GB00007</span>
+                        <span style="width:1.04rem;">不动产单元号</span>
+                        <span style="width:2.24rem;">320111003017GB00007F00030420</span>
                     </p>
                     <p style="height:0.3rem;">
-                        <span style="width:1.04rem;">坐落</span>
-                        <span style="width:2.24rem;">浦口区蒲州路</span>
-                        <span style="width:1.04rem;">坐落</span>
-                        <span style="width:2.24rem;">浦口区蒲州路</span>
+                        <span style="width:1.04rem;">宗地面积</span>
+                        <span style="width:2.24rem;">274158.31</span>
+                        <span style="width:1.04rem;">独用土地面积</span>
+                        <span style="width:2.24rem;"></span>
                     </p>
                     <p style="height:0.39rem;">
-                        <span style="width:1.04rem;">坐落</span>
-                        <span style="width:2.24rem;">浦口区蒲州路</span>
-                        <span style="width:1.04rem;">坐落</span>
-                        <span style="width:2.24rem;">浦口区蒲州路</span>
+                        <span style="width:1.04rem;">房屋性质</span>
+                        <span style="width:2.24rem;">权利类型</span>
+                        <span style="width:1.04rem;">土地性质</span>
+                        <span style="width:2.24rem;">土地使用权期限</span>
                     </p>
                     <p style="height:0.3rem;">
-                        <span style="width:1.04rem;">坐落</span>
-                        <span style="width:2.24rem;">浦口区蒲州路</span>
-                        <span style="width:1.04rem;">坐落</span>
-                        <span style="width:2.24rem;">浦口区蒲州路</span>
+                        <span style="width:1.04rem;">市场化商品房</span>
+                        <span style="width:2.24rem;"></span>
+                        <span style="width:1.04rem;">出让</span>
+                        <span style="width:2.24rem;"></span>
                     </p>
                     <p style="height:0.39rem;">
-                        <span style="width:0.62rem;">坐落</span>
-                        <span style="width:1.14rem;">浦口区蒲州路</span>
-                        <span style="width:0.62rem;">坐落</span>
-                        <span style="width:1.14rem;">浦口区蒲州路</span>
-                        <span style="width:0.54rem;">坐落</span>
+                        <span style="width:0.62rem;">权利人</span>
+                        <span style="width:1.14rem;">证件号</span>
+                        <span style="width:0.62rem;">义务人</span>
+                        <span style="width:1.14rem;">证书/证明号</span>
+                        <span style="width:0.54rem;">共有比例</span>
                         <span style="width:0.5rem;">产权来源</span>
-                        <span style="width:0.9rem;">坐落</span>
-                        <span style="width:1rem;">浦口区蒲州路</span>
+                        <span style="width:0.9rem;">登记时间</span>
+                        <span style="width:1rem;">首次取得时间</span>
                     </p>
                     <p style="height:0.3rem;">
-                        <span style="width:0.62rem;">坐落</span>
-                        <span style="width:1.14rem;">浦口区蒲州路</span>
-                        <span style="width:0.62rem;">坐落</span>
-                        <span style="width:1.14rem;">浦口区蒲州路</span>
-                        <span style="width:0.54rem;">坐落</span>
-                        <span style="width:0.5rem;">产权来源</span>
-                        <span style="width:0.9rem;">坐落</span>
-                        <span style="width:1rem;">浦口区蒲州路</span>
+                        <span style="width:0.62rem;">邵元超</span>
+                        <span style="width:1.14rem;">342222********8059</span>
+                        <span style="width:0.62rem;">南京浦东房地产开发有</span>
+                        <span style="width:1.14rem;"></span>
+                        <span style="width:0.54rem;"></span>
+                        <span style="width:0.5rem;"></span>
+                        <span style="width:0.9rem;">2018-06-20</span>
+                        <span style="width:1rem;"></span>
                     </p>
                     <p style="height:0.3rem;">
                         <span style="width:0.62rem;"></span>
@@ -401,7 +403,7 @@
             </div>
             <div class="line" style="display: block;height:0.49rem;font-size: 0.16rem;">
                 <p style="font-size: 0.16rem;text-align: right; line-height: 0.25rem;padding-right: 0.22rem;box-sizing: border-box;">南京市不动产档案管理中心</p>
-                <p style="font-size: 0.15rem;text-align: right; line-height: 0.24rem;padding-right: 0.26rem;box-sizing: border-box;">2019年11月14日  09时28分</p>
+                <p style="font-size: 0.15rem;text-align: right; line-height: 0.24rem;padding-right: 0.26rem;box-sizing: border-box;" id="fullDate">2019年11月14日  09时28分</p>
             </div>
         </div>
         <div class="disc" style="margin-top: 0.06rem ;">特别提示：</div>
@@ -411,4 +413,14 @@
         <div class="disc bold">4、如该不动产房屋用途与土地用途不一致，应及时申请更正登记，用途一致的方可办理不动产转移登记、抵押登记。</div>
     </div>
 </body>
+<script>
+    var d = new Date();//获取系统当前时间
+    var month = d.getMonth()+1;
+    var date = document.getElementById('date');
+    date.innerHTML = d.getFullYear() +'年'+month+'月'+d.getDate()+'日';
+    var dateCode = document.getElementById('dateCode');
+    dateCode.innerHTML = d.getFullYear() +'年'+month+'月'+d.getDate()+'日';
+    var fullDate = document.getElementById('fullDate');
+    fullDate.innerHTML = d.getFullYear() +'年'+month+'月'+d.getDate()+'日'+' '+d.getHours()+'时'+d.getMinutes()+'分';
+</script>
 </html>
