@@ -91,7 +91,6 @@
     }
     .table{
         width: 100%;
-        height: 3rem;
         border: 1px solid #000;
     }
     .title1{
@@ -104,27 +103,31 @@
         letter-spacing:1px;
         text-align: center;
         border-right: 1px solid #000;
+        position: relative;
     }
-    .line1{
+    .line{
         width: 100%;
         height: 1.09rem;
         border-bottom: 1px solid #000;
         overflow: hidden;
         display: flex;
     }
-    .line1 .row1{
+    .line:last-of-type{
+        border-bottom: 1px solid transparent;
+    }
+    .row1{
         flex: 1;
         height: 100%;
     }
-    .line1 .row1 p{
+    .row1 p{
         height: 100%;
         border-bottom: 1px solid #000;
         display: flex;
     }
-    .line1 .row1 p:last-of-type{
+    .row1 p:last-of-type{
         border-bottom: 1px solid transparent;
     }
-    .line1 .row1 p span{
+    .row1 p span{
         display: inline-block;
         text-align: center;
         border-right: 1px solid #000;
@@ -133,10 +136,18 @@
         flex-direction: column;
         justify-content: space-around;
     }
-    .line1 .row1 p span:last-of-type{
+    .row1 p span:last-of-type{
         border-right: 1px solid transparent;
     }
-    
+    .disc{
+        font-size: 0.09rem;
+        line-height: 0.16rem;
+    }
+    .bold{
+        font-size: 0.12rem;
+        font-weight: 600;
+        line-height: 0.16rem;
+    }
 </style>
 <body>
     <div class="container">
@@ -148,7 +159,7 @@
             <img src="https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=fa9140accd95d143ce7bec711299e967/2934349b033b5bb571dc8c5133d3d539b600bc12.jpg">
         </p>
         <div class="table">
-            <div class="line1">
+            <div class="line" style="height:1.09rem;">
                 <div class="title1"><span>自然状况</span></div>
                 <div class="row1">
                     <p style="height:0.3rem;">
@@ -175,8 +186,229 @@
                         </p>
                 </div>
             </div>
-            
+            <div class="line" style="height:2.64rem;">
+                <div class="title1"><span>权属状况</span></div>
+                <div class="row1">
+                    <p style="height:0.3rem;">
+                        <span style="width:1.04rem;">坐落</span>
+                        <span style="width:2.24rem;">浦口区蒲州路</span>
+                        <span style="width:1.04rem;">坐落</span>
+                        <span style="width:2.24rem;">浦口区蒲州路</span>
+                    </p>
+                    <p style="height:0.3rem;">
+                        <span style="width:1.04rem;">坐落</span>
+                        <span style="width:2.24rem;">浦口区蒲州路</span>
+                        <span style="width:1.04rem;">坐落</span>
+                        <span style="width:2.24rem;">浦口区蒲州路</span>
+                    </p>
+                    <p style="height:0.39rem;">
+                        <span style="width:1.04rem;">坐落</span>
+                        <span style="width:2.24rem;">浦口区蒲州路</span>
+                        <span style="width:1.04rem;">坐落</span>
+                        <span style="width:2.24rem;">浦口区蒲州路</span>
+                    </p>
+                    <p style="height:0.3rem;">
+                        <span style="width:1.04rem;">坐落</span>
+                        <span style="width:2.24rem;">浦口区蒲州路</span>
+                        <span style="width:1.04rem;">坐落</span>
+                        <span style="width:2.24rem;">浦口区蒲州路</span>
+                    </p>
+                    <p style="height:0.39rem;">
+                        <span style="width:0.62rem;">坐落</span>
+                        <span style="width:1.14rem;">浦口区蒲州路</span>
+                        <span style="width:0.62rem;">坐落</span>
+                        <span style="width:1.14rem;">浦口区蒲州路</span>
+                        <span style="width:0.54rem;">坐落</span>
+                        <span style="width:0.5rem;">产权来源</span>
+                        <span style="width:0.9rem;">坐落</span>
+                        <span style="width:1rem;">浦口区蒲州路</span>
+                    </p>
+                    <p style="height:0.3rem;">
+                        <span style="width:0.62rem;">坐落</span>
+                        <span style="width:1.14rem;">浦口区蒲州路</span>
+                        <span style="width:0.62rem;">坐落</span>
+                        <span style="width:1.14rem;">浦口区蒲州路</span>
+                        <span style="width:0.54rem;">坐落</span>
+                        <span style="width:0.5rem;">产权来源</span>
+                        <span style="width:0.9rem;">坐落</span>
+                        <span style="width:1rem;">浦口区蒲州路</span>
+                    </p>
+                    <p style="height:0.3rem;">
+                        <span style="width:0.62rem;"></span>
+                        <span style="width:1.14rem;"></span>
+                        <span style="width:0.62rem;"></span>
+                        <span style="width:1.14rem;"></span>
+                        <span style="width:0.54rem;"></span>
+                        <span style="width:0.5rem;"></span>
+                        <span style="width:0.9rem;"></span>
+                        <span style="width:1rem;"></span>
+                    </p>
+                    <p style="height:0.3rem;">
+                        <span style="width:0.62rem;"></span>
+                        <span style="width:1.14rem;"></span>
+                        <span style="width:0.62rem;"></span>
+                        <span style="width:1.14rem;"></span>
+                        <span style="width:0.54rem;"></span>
+                        <span style="width:0.5rem;"></span>
+                        <span style="width:0.9rem;"></span>
+                        <span style="width:1rem;"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="line" style="height:1.01rem;">
+                <div class="title1"><span>补换证记录</span></div>
+                <div class="row1">
+                    <p style="height:0.39rem;">
+                        <span style="width:1.63rem;">原证编号</span>
+                        <span style="width:1.63rem;">补换证编号</span>
+                        <span style="width:1.63rem;">补还发时间</span>
+                        <span style="width:1.66rem;">说明</span>
+                    </p>
+                    <p style="height:0.3rem;">
+                        <span style="width:1.63rem;"></span>
+                        <span style="width:1.63rem;"></span>
+                        <span style="width:1.63rem;"></span>
+                        <span style="width:1.66rem;"></span>
+                    </p>
+                    <p style="height:0.3rem;">
+                        <span style="width:1.63rem;"></span>
+                        <span style="width:1.63rem;"></span>
+                        <span style="width:1.63rem;"></span>
+                        <span style="width:1.66rem;"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="line" style="height:1.33rem;">
+                <div class="title1"><span>抵押情况</span></div>
+                <div class="row1">
+                    <p style="height:0.39rem;">
+                        <span style="width:0.98rem;">抵押权人</span>
+                        <span style="width:0.78rem;">抵押人</span>
+                        <span style="width:0.59rem;">抵押方式</span>
+                        <span style="width:0.67rem;">担保范围</span>
+                        <span style="width:0.85rem;">被担保主债权数额/最高债权数</span>
+                        <span style="width:0.8rem;">债务履行期限/债权确定期间</span>
+                        <span style="width:0.99rem;">他项权利证号/登记证明号</span>
+                        <span style="width:0.85rem;">抵押权登记时间</span>
+                    </p>
+                    <p style="height:0.3rem;">
+                        <span style="width:0.98rem;">中国建设银行股份有限公司南京中央</span>
+                        <span style="width:0.78rem;">邵元超</span>
+                        <span style="width:0.59rem;">一般抵押</span>
+                        <span style="width:0.67rem;">抵押担保范围以抵押人</span>
+                        <span style="width:0.85rem;">137</span>
+                        <span style="width:0.8rem;">2018-05-22 00:00:00起</span>
+                        <span style="width:0.99rem;">苏（2018）宁浦不动产证明第</span>
+                        <span style="width:0.85rem;">2018/7/12 11:06:10</span>
+                    </p>
+                    <p style="height:0.31rem;">
+                        <span style="width:0.98rem;"></span>
+                        <span style="width:0.78rem;"></span>
+                        <span style="width:0.59rem;"></span>
+                        <span style="width:0.67rem;"></span>
+                        <span style="width:0.85rem;"></span>
+                        <span style="width:0.8rem;"></span>
+                        <span style="width:0.99rem;"></span>
+                        <span style="width:0.85rem;"></span>
+                    </p>
+                    <p style="height:0.3rem;">
+                        <span style="width:0.98rem;"></span>
+                        <span style="width:0.78rem;"></span>
+                        <span style="width:0.59rem;"></span>
+                        <span style="width:0.67rem;"></span>
+                        <span style="width:0.85rem;"></span>
+                        <span style="width:0.8rem;"></span>
+                        <span style="width:0.99rem;"></span>
+                        <span style="width:0.85rem;"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="line" style="height:1.22rem;">
+                <div class="title1"><span>权力限制</span></div>
+                <div class="row1">
+                    <p style="height:0.39rem;">
+                        <span style="width:1.08rem;">限制人</span>
+                        <span style="width:1.08rem;">限制类别</span>
+                        <span style="width:1.08rem;">限制文号</span>
+                        <span style="width:1.08rem;">限制期限</span>
+                        <span style="width:1.08rem;">登记时间</span>
+                        <span style="width:1.13rem;">状态</span>
+                    </p>
+                    <p style="height:0.27rem;">
+                        <span style="width:1.08rem;"></span>
+                        <span style="width:1.08rem;"></span>
+                        <span style="width:1.08rem;"></span>
+                        <span style="width:1.08rem;"></span>
+                        <span style="width:1.08rem;"></span>
+                        <span style="width:1.13rem;"></span>
+                    </p>
+                    <p style="height:0.27rem;">
+                        <span style="width:1.08rem;"></span>
+                        <span style="width:1.08rem;"></span>
+                        <span style="width:1.08rem;"></span>
+                        <span style="width:1.08rem;"></span>
+                        <span style="width:1.08rem;"></span>
+                        <span style="width:1.13rem;"></span>
+                    </p>
+                    <p style="height:0.27rem;">
+                        <span style="width:1.08rem;"></span>
+                        <span style="width:1.08rem;"></span>
+                        <span style="width:1.08rem;"></span>
+                        <span style="width:1.08rem;"></span>
+                        <span style="width:1.08rem;"></span>
+                        <span style="width:1.13rem;"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="line" style="height:0.68rem;">
+                <div class="title1"><span>其他</span></div>
+                <div class="row1">
+                    <p style="height:0.39rem;">
+                        <span style="width:0.93rem;">类别</span>
+                        <span style="width:0.93rem;">权利人/申请人</span>
+                        <span style="width:0.93rem;">义务人</span>
+                        <span style="width:0.93rem;">内容</span>
+                        <span style="width:0.93rem;">登记证名号</span>
+                        <span style="width:0.93rem;">起止时间</span>
+                        <span style="width:0.93rem;">登记时间</span>
+                    </p>
+                    <p style="height:0.3rem;">
+                        <span style="width:0.93rem;"></span>
+                        <span style="width:0.93rem;"></span>
+                        <span style="width:0.93rem;"></span>
+                        <span style="width:0.93rem;"></span>
+                        <span style="width:0.93rem;"></span>
+                        <span style="width:0.93rem;"></span>
+                        <span style="width:0.93rem;"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="line" style="height:0.25rem;">
+                <div class="title1"><span>附记</span></div>
+                <div class="row1">
+                    <p style="height:0.25rem;">
+                        <span style="width:0.93rem;"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="line" style="height:0.25rem;">
+                <div class="title1"><span>备注</span></div>
+                <div class="row1">
+                    <p style="height:0.25rem;">
+                        <span style="width:0.93rem;"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="line" style="display: block;height:0.49rem;font-size: 0.16rem;">
+                <p style="font-size: 0.16rem;text-align: right; line-height: 0.25rem;padding-right: 0.22rem;box-sizing: border-box;">南京市不动产档案管理中心</p>
+                <p style="font-size: 0.15rem;text-align: right; line-height: 0.24rem;padding-right: 0.26rem;box-sizing: border-box;">2019年11月14日  09时28分</p>
+            </div>
         </div>
+        <div class="disc" style="margin-top: 0.06rem ;">特别提示：</div>
+        <div class="disc">1、请当场合适本查询结果证明，如有异议，请向工作人员或查询窗口提出复核；因隐瞒真实信息或提供虚假信息所产生的一切法律责任，均有查询人自行承担。</div>
+        <div class="disc">2、请妥善保管本人身份证件和查询结果证明，如涉及国家机密、个人隐私或商业秘密，查询人负有保密责任；因保管不当、信息泄漏或不当使用所产生的一切法律责任，均有查询人自行承担。</div>
+        <div class="disc">3、经查询人同意，第三方可使用“南京不动产”微信公众号扫描右上角二维码对产讯结果证明的真伪进行验证。</div>
+        <div class="disc bold">4、如该不动产房屋用途与土地用途不一致，应及时申请更正登记，用途一致的方可办理不动产转移登记、抵押登记。</div>
     </div>
 </body>
 </html>
