@@ -32,24 +32,32 @@
         margin: 0;
         padding: 0;
     }
-    .container{
+    .box{
         width: 7rem;
+        height: 100%;
+        position: relative;
+    }
+    .container{
+        width: 70rem;
         margin: 0 auto;
         padding: 27px 0;
         font-family: "SimSun";
-        font-size: 0.12rem;
-        margin-top: -1rem;
-        transform: scale(0.8);
+        margin-top: -9rem;
+        transform: scale(0.09);
+        position:absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -35rem;
     }
     p{
         width: 100%;
-        height: 0.3rem;
-        line-height: 0.3rem;
+        height: 3rem;
+        line-height: 3rem;
     }
     .title{
         width: 100%;
         text-align: center;
-        font-size: 0.18rem;
+        font-size: 1.8rem;
         color: #010101;
         font-weight: 600;
         letter-spacing:2px;
@@ -57,14 +65,14 @@
     .t1{
         width: 100%;
         text-align: center;
-        font-size: 0.16rem;
+        font-size: 1.6rem;
         color: #141414;
         font-weight: 600;
         margin-top: 0.05rem;
     }
     .t2{
         width: 100%;
-        font-size: 0.12rem;
+        font-size: 1.2rem;
         color: #010101;
         font-weight: 400;
         margin-top: 0.05rem;
@@ -75,22 +83,22 @@
         position: relative;
     }
     .t2 .number{
-        font-size: 0.12rem;
+        font-size: 1.2rem;
         color: #010101;
         font-weight: 600;
         
     }
     .t2 .number span{
-        font-size: 0.08rem;
+        font-size: 0.8rem;
         color: #010101;
         font-weight: 400;
     }
     .t2 img{
-        width: 0.64rem;
-        height: 0.64rem;
+        width: 0.6.4rem;
+        height: 0.6.4rem;
         position: absolute;
-        bottom: 0.3rem;
-        right: 0.14rem;
+        bottom: 3rem;
+        right: 1.4rem;
     
     }
     .table{
@@ -98,20 +106,20 @@
         border: 1px solid #000;
     }
     .title1{
-        width: 0.42rem;
+        width: 4.2rem;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        font-size: 0.14rem;
-        letter-spacing:0px;
+        font-size: 1.4rem;
+        letter-spacing: 0px;
         text-align: center;
         border-right: 1px solid #000;
         position: relative;
     }
     .line{
         width: 100%;
-        height: 1.09rem;
+        height: 10.9rem;
         border-bottom: 1px solid #000;
         overflow: hidden;
         display: flex;
@@ -120,7 +128,7 @@
         border-bottom: 1px solid transparent;
     }
     .row1{
-        width: 6.58rem;
+        width: 65.8rem;
         height: 100%;
     }
     .row1 p{
@@ -135,8 +143,8 @@
         display: inline-block;
         text-align: center;
         border-right: 1px solid #000;
-        font-size: 0.12rem;
-        line-height: 0.12rem;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -145,18 +153,22 @@
         border-right: 1px solid transparent;
     }
     .disc{
-        font-size: 0.09rem;
-        line-height: 0.16rem;
-        padding: 0 0.04rem;
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+        padding: 0 0.4rem;
         box-sizing: border-box;
     }
     .bold{
-        font-size: 0.12rem;
+        font-size: 1.2rem;
         font-weight: 600;
-        line-height: 0.16rem;
+        line-height: 1.6rem;
     }
 </style>
 <body>
+    <div class="box">
+
+        
+    </div>
     <div class="container">
         <p class="title">不动产登记资料查询结果证明</p>
         <p class="t1">（权利人、利害关系人）</p>
@@ -166,6 +178,38 @@
             <img src="https://raw.githubusercontent.com/gaozhan94/resume/master/imgs/QRCode.png">
         </p>
         <div class="table">
+            <div class="line" style="height:10.9rem;">
+                <div class="title1"><span>自然状况</span></div>
+                <div class="row1">
+                    <p style="height:3rem;">
+                        <span style="width:10.4rem;">坐落</span>
+                        <span style="flex:1;">玄武区鱼市街2号609室</span>
+                    </p>
+                    <p style="height:3.9rem;">
+                        <span style="width:9.3rem;">土地用途</span>
+                        <span style="width:9.3rem;">房屋结构</span>
+                        <span style="width:9.3rem;">建（构）筑物规划用途</span>
+                        <span style="width:9.3rem;">所在层/总层数</span>
+                        <span style="width:9.3rem;">建筑面积</span>
+                        <span style="width:9.3rem;">套内建筑面积</span>
+                        <span style="width:9.3rem;">建筑年代</span>
+                    </p>
+                    <p style="height:3.9rem;">
+                            <span style="width:9.3rem;">城镇单一住宅用地</span>
+                            <span style="width:9.3rem;">混合结构</span>
+                            <span style="width:9.3rem;">成套住宅</span>
+                            <span style="width:9.3rem;">6/6</span>
+                            <span style="width:9.3rem;">59.41</span>
+                            <span style="width:9.3rem;">51.68</span>
+                            <span style="width:9.3rem;">1988</span>
+                        </p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+        <!-- <div class="table">
             <div class="line" style="height:1.09rem;">
                 <div class="title1"><span>自然状况</span></div>
                 <div class="row1">
@@ -411,12 +455,12 @@
                 <p style="font-size: 0.15rem;text-align: right; line-height: 0.24rem;padding-right: 0.26rem;box-sizing: border-box;" id="fullDate">2019年11月14日  09时28分</p>
             </div>
         </div>
-        <div class="disc" style="margin-top: 0.06rem ;">特别提示：</div>
+        <div class="disc" style="margin-top: 0.06rem;">特别提示：</div>
         <div class="disc">1、请当场合适本查询结果证明，如有异议，请向工作人员或查询窗口提出复核；因隐瞒真实信息或提供虚假信息所产生的一切法律责任，均有查询人自行承担。</div>
         <div class="disc">2、请妥善保管本人身份证件和查询结果证明，如涉及国家机密、个人隐私或商业秘密，查询人负有保密责任；因保管不当、信息泄漏或不当使用所产生的一切法律责任，均有查询人自行承担。</div>
         <div class="disc">3、经查询人同意，第三方可使用“南京不动产”微信公众号扫描右上角二维码对产讯结果证明的真伪进行验证。</div>
         <div class="disc bold">4、如该不动产房屋用途与土地用途不一致，应及时申请更正登记，用途一致的方可办理不动产转移登记、抵押登记。</div>
-    </div>
+    </div> -->
 </body>
 <script>
     var d = new Date();//获取系统当前时间
